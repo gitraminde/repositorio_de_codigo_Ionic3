@@ -1,0 +1,54 @@
+<!--
+  Generated template for the ResultPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="header">
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+    <ion-title>Resultado do Exame</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <!-- <ion-card *ngFor = "let item of dataSet" color="light">
+        <ion-card-content >
+         <p><strong>Disciplina: </strong> {{item.disciplina1}}</p>
+         <p><strong>Nota: </strong> {{item.nota1}}</p><hr>
+         <p> <strong>Disciplina: </strong> {{item.disciplina2}}</p>
+         <p><strong>Nota: </strong> {{item.nota2}}</p><hr>
+         <p><strong>Media: </strong> {{item.media}} - {{item.resultado}}</p>
+        </ion-card-content>
+      </ion-card> -->
+
+  
+          <ion-grid  >
+            
+            <!-- <ion-row >
+              <ion-col col-5>Disciplina1</ion-col>
+              <ion-col col-5>Nota1</ion-col>
+              <ion-col col-5>Disciplina2</ion-col>
+              <ion-col col-5>Nota2</ion-col>
+              <ion-col col-5>Media</ion-col>
+              <ion-col col-5>Resultado</ion-col>
+            </ion-row> -->
+
+              <ion-row  nowrap class="forecast_container" *ngFor="let item of dataSet">
+                <ion-col col-4>{{ item.disciplina1 }}:</ion-col>
+                <ion-col col-2>{{ item.nota1 }}</ion-col>
+                <ion-col col-4>{{ item.disciplina2 }}:</ion-col>
+                <ion-col col-2>{{ item.nota2 }}</ion-col>
+                <ion-col col-3>Media: {{ item.media }}</ion-col>
+                <ion-col col-4>{{ item.resultado }}</ion-col>
+              </ion-row>
+        
+          
+          </ion-grid>
+      
+</ion-content>

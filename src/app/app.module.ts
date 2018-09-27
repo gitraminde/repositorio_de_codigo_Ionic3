@@ -7,9 +7,17 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import {StatusPage} from '../pages/status/status';
+import {SalaPage} from '../pages/sala/sala';
+import {ResultPage} from '../pages/result/result';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { LoginPage } from '../pages/login/login';
+import {SignupPage} from '../pages/signup/signup';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -17,10 +25,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    WelcomePage,
+    SignupPage,
+    LoginPage,
+    StatusPage,
+    SalaPage,
+    ResultPage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpModule,HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -29,7 +43,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    WelcomePage,
+    SignupPage,
+    LoginPage,
+    StatusPage,
+    SalaPage,
+    ResultPage
+    
   ],
   providers: [
     StatusBar,

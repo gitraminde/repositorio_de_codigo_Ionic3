@@ -1,0 +1,26 @@
+
+<ion-header class="header">
+  <ion-navbar>
+    <ion-title>login</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h3>Caro Candidato</h3>
+    <p>
+      Digite o seu código de candidato e senha (que escolheu durante o cadastro) para entrar na plataforma. Só pode usar o seu Código de Candidato como username(utilizador) para entrar na plataforma!
+    </p>
+    <ion-list class="form-group col-md-12">
+        <ion-item>
+          <ion-label fixed class="control-label">Username</ion-label>
+          <ion-input class="form-control" type="text" value="" [(ngModel)]="userData.username" ></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+        </ion-item>
+        <button ion-button block color="mycolor3" (click)="login()" >login</button>
+      </ion-list>
+</ion-content>

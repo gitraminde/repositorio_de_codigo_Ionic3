@@ -1,0 +1,21 @@
+page-welcome {
+
+    #welcome{
+        background: color($colors, boxshadow);
+        h1{
+            font-size: 40px;
+            margin-top: 10%;
+            //color: white;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+        strong {
+            text-align: right;
+        }
+        .marginTop{
+
+            margin-top: 40%;
+        }
+    }
+
+}
